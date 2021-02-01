@@ -2,7 +2,7 @@
 title: Deploy agents - quickstart
 linkTitle: Deploy your agents - quickstart
 draft: true
-weight: 
+weight: null
 description: >-
   Learn how to deploy your Discovery Agent and Traceability Agent using Docker
   containers so that you can manage your AWS API Gateway environment within
@@ -76,5 +76,5 @@ Learn the basics to create your Discovery Agent and Traceability Agent configura
 
 ### 4. Setup using AWS CloudFormation
 
-* Get the required templates at [https://axway.bintray.com/generic-repo/aws-agents/aws_apigw_agent_config/](<https://axway.bintray.com/generic-repo/aws-agents/aws_apigw_agent_config/>).
+* Get the required templates at [https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/](<https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/>).
 * Setup and deploy the CloudFormation Stack [AWS CloudFormation](/docs/central/connect-aws-gateway/prepare-aws-api-gateway/#set-up-the-cloudformation).
