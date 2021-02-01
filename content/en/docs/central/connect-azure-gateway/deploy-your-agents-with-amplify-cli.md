@@ -123,20 +123,20 @@ To utilize the agents, pull the latest Docker images and
 run them using the appropriate supplied environment files, (da_env_vars.env & ta_env_vars.env):
 
   - Pull the latest Discovery Agent:
-    docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-discovery-agent:latest
+    docker pull axway.jfrog.io/ampc-public-docker-release/agent/azure-discovery-agent:latest
   - Pull the latest Traceability Agent:
-    docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-traceability-agent:latest
+    docker pull docker pull axway.jfrog.io/ampc-public-docker-release/agent/azure-discovery-agent:latest/azure-traceability-agent:latest
 
   - Run the latest Discovery Agent:
     docker run --env-file "$(pwd)"/da_env_vars.env -v "$(pwd)":/keys \
-        https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-discovery-agent:latest
+        axway.jfrog.io/ampc-public-docker-release/agent/azure-discovery-agent:latest
   - Run the latest Traceability Agent:
     docker run --env-file "$(pwd)"/da_env_vars.env -v "$(pwd)":/keys \
-        https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-traceability-agent:latest
+        axway.jfrog.io/ampc-public-docker-release/agent/azure-traceability-agent:latest
 ```
 
 * Pull the latest images of the Discovery/Traceability Agents:
-    * These two commands pull the latest released agents from https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config.
+    * These two commands pull the latest released agents from docker pull axway.jfrog.io/ampc-public-docker-release/agent.
 * Run the latest images of the Discovery/Traceability Agents:
     * These two commands run the Docker Containers using the created environment files, and mount the directory of the location of the appropriate keys, `public_key.pem` & `private_key.pem`, which were either generated during the installation, or available from an existing service account.
 
