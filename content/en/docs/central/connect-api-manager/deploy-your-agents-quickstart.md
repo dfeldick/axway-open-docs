@@ -59,7 +59,7 @@ An explanation for each variable can be found in the [Agent variables section](/
 ## 2. Download Discovery Agent
 
 ```shell
-curl -L "https://axway.bintray.com/generic-repo/v7-agents/v7_discovery_agent/latest/discovery_agent-latest.zip" -o discovery_agent-latest.zip
+curl -L "https://axway.jfrog.io/ui/repos/tree/General/ampc-public-generic-release/v7-agents/v7_discovery_agent/latest/discovery_agent-latest.zip" -o discovery_agent-latest.zip
 ```
 
 Unzip the file `discovery_agent-latest.zip` to get the agent binary (`discovery_agent`) and the template configuration (`discovery_agent.yml`).
@@ -84,7 +84,7 @@ And the agent should start discovering already published APIs.
 ## 4. Download Traceability Agent
 
 ```shell
-curl -L "https://axway.bintray.com/generic-repo/v7-agents/v7_traceability_agent/latest/traceability_agent-latest.zip" -o traceability_agent-latest.zip
+curl -L "https://axway.jfrog.io/ui/repos/tree/General/ampc-public-generic-release/v7-agents/v7_traceability_agent/latest/traceability_agent-latest.zip" -o traceability_agent-latest.zip
 ```
 
 Unzip the file `traceability_agent-latest.zip` to get the agent binary (`traceability_agent`) and the template configuration (`traceability_agent.yml`) into the same folder as the discovery agent.
