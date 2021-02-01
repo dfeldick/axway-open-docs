@@ -249,7 +249,7 @@ LOG_PATH=logs
 2. Pull the latest image of the Discovery Agent:
 
    ```
-   docker pull axway-docker-public-registry.bintray.io/agent/aws-apigw-discovery-agent:latest
+   docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-discovery-agent:latest
    ```
 
 3. Start the Discovery Agent pointing to the `env_vars` file and the keys directory
@@ -257,7 +257,7 @@ LOG_PATH=logs
     * Continuous Discovery mode
 
         ```
-       docker run --env-file ./env_vars -v <pwd>/keys:/keys  axway-docker-public-registry.bintray.io/agent/aws-apigw-discovery-agent:latest
+       docker run --env-file ./env_vars -v <pwd>/keys:/keys  https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-discovery-agent:latest
         ```
 
         `pwd` relates to the local directory where the docker command is run. For Windows, the absolute path is preferred.
@@ -265,7 +265,7 @@ LOG_PATH=logs
     * Synchronous Discovery mode
   
         ```
-        docker run --env-file ./env_vars -v <pwd>/keys:/keys  axway-docker-public-registry.bintray.io/agent/aws-apigw-discovery-agent:latest --synchronize
+        docker run --env-file ./env_vars -v <pwd>/keys:/keys  https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-discovery-agent:latest --synchronize
         ```
 
         `pwd` relates to the local directory where the docker command is run. For Windows, the absolute path is preferred.
@@ -354,13 +354,13 @@ LOG_PATH=logs
 2. Pull the latest image of the Traceability Agent:
 
    ```
-   docker pull axway-docker-public-registry.bintray.io/agent/aws-apigw-traceability-agent:latest
+   docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-traceability-agent:latest
    ```
 
 3. Start the Traceability Agent pointing to the `env_vars` file and the `keys` directory. Note that `pwd` relates to the local directory where the docker command is run. For Windows, the absolute path is preferred.
 
    ```
-   docker run --env-file ./env_vars -v <pwd>/keys:/keys  axway-docker-public-registry.bintray.io/agent/aws-apigw-traceability-agent:latest
+   docker run --env-file ./env_vars -v <pwd>/keys:/keys  https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-traceability-agent:latest
    ```
 
 4. Run the following health check command to ensure the agent is up and running:
