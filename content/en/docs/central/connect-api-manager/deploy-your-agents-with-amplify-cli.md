@@ -130,13 +130,13 @@ As mentioned in the installation procedure, agents can be started with the follo
 Discovery Agent:
 
 ```shell
-docker run -it --env-file $(pwd)/da_env_vars.env -v $(pwd):/keys axway-docker-public-registry.bintray.io/agent/v7-discovery-agent:latest
+docker run -it --env-file $(pwd)/da_env_vars.env -v $(pwd):/keys axway.jfrog.io/ampc-public-docker-release/agent/v7-discovery-agent:latest
 ```
 
 Traceability Agent:
 
 ```shell
-docker run -it --env-file $(pwd)/ta_env_vars.env -v $(pwd):/keys -v EVENT_LOG_PATH_ENTERED_DURING_INSTALLATION:/events axway-docker-public-registry.bintray.io/agent/v7-traceability-agent:latest
+docker run -it --env-file $(pwd)/ta_env_vars.env -v $(pwd):/keys -v EVENT_LOG_PATH_ENTERED_DURING_INSTALLATION:/events axway.jfrog.io/ampc-public-docker-release/agent/v7-traceability-agent:latest
 ```
 
 ### Linux Service mode for binary agent
