@@ -53,7 +53,7 @@ For additional logging information, see <https://docs.aws.amazon.com/apigateway/
 * Amazon CloudWatch Service
 * Amazon Simple Queue Service (AWS SQS)
 * AWS Lambda
-* CloudFormation template. Download from [https://axway.bintray.com/generic-repo/aws-agents/aws_apigw_agent_config/](<https://axway.bintray.com/generic-repo/aws-agents/aws_apigw_agent_config/>).
+* CloudFormation template. Download from [https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/](<https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/>).
 
 ## Connect AWS API Gateway to AMPLIFY Central using CLI
 
