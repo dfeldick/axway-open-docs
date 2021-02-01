@@ -2,7 +2,7 @@
 title: Prepare AWS API Gateway
 linkTitle: Prepare AWS API Gateway
 draft: true
-weight: 
+weight: null
 description: Learn how to use the provided CoudFormation templates to initialize
   AWS Services, which enables the agents to collect API / traffic data.
 ---
@@ -18,7 +18,7 @@ Learn how to configure CloudFormation to initialize the required AWS Services fo
 ## Download the CloudFormation templates
 
 ```
-curl -L "https://axway.bintray.com/generic-repo/aws-agents/aws_apigw_agent_config/latest/aws_apigw_agent_config-latest.zip" -o aws_apigw_agent_config-latest.zip
+curl -L "https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/latest/aws_apigw_agent_config-latest.zip" -o aws_apigw_agent_config-latest.zip
 ```
 
 This zip contains three files:
