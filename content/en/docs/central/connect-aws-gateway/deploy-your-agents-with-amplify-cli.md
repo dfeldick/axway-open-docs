@@ -201,15 +201,15 @@ To complete the install, run the following AWS CLI command:
     AWS_AUTH_SECRETKEY=Your_SecretAccessKey
 
   - Pull the latest image of the Discovery Agent:
-    docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-discovery-agent:latest
+    docker pull axway.jfrog.io/ampc-public-docker-release/agent/aws-apigw-discovery-agent:latest
   - Pull the latest image of the Traceability Agent:
-    docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-traceability-agent:latest
+    docker pull axway.jfrog.io/ampc-public-docker-release/agent/aws-apigw-traceability-agent:latest
   - Run the latest Discovery Agent:
     docker run --env-file "$(pwd)"/da_env_vars.env -v "$(pwd)":/keys \
-        https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_configagent/aws-apigw-discovery-agent:latest
+        axway.jfrog.io/ampc-public-docker-release/agent/aws-apigw-discovery-agent:latest
   - Run the latest Traceability Agent:
     docker run --env-file "$(pwd)"/ta_env_vars.env -v "$(pwd)":/keys \
-        https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/agent/aws-apigw-traceability-agent:latest
+        axway.jfrog.io/ampc-public-docker-release/agent/aws-apigw-traceability-agent:latest
 ```
 
 * Create, if necessary, and upload all files to your S3 bucket:
@@ -218,7 +218,7 @@ To complete the install, run the following AWS CLI command:
     * This command creates the Access and Secret Key Pair.
 * Add the results from the Key Pair creation above into the environment files, da_env_vars.env & ta_env_vars.env, after the appropriate variables, `AWS_AUTH_ACCESSKEY=` and `AWS_AUTH_SECRETKEY=`.
 * Pull the latest images of the Discovery/Traceability Agents:
-    * These two commands pull the latest released agents from https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config.
+    * These two commands pull the latest released agents from axway.jfrog.io/ampc-public-docker-release/agent.
 * Run the latest images of the Discovery/Traceability Agents:
     * These two commands run the Docker Containers using the created environment files, and mounting the directory of the location of the appropriate keys, `public_key.pem` & `private_key.pem`, which were either generated during the installation, or available from an existing service account.
 
