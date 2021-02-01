@@ -53,7 +53,7 @@ The containerized agent can run in the following mode:
 1. Download the latest version of the zip file from the Axway public repository using the following command:
 
    ```shell
-   curl -L "https://ampc-public-docker-release/v7-agents/v7_discovery_agent/latest/discovery_agent-latest.zip" -o discovery_agent-latest.zip
+   curl -L "https://axway.jfrog.io/artifactory/ampc-public-generic-release/v7-agents/v7_discovery_agent/latest/discovery_agent-latest.zip" -o discovery_agent-latest.zip
    ```
 
 2. Unzip the file `discovery_agent-latest.zip` to get the agent binary (`discovery_agent`) and the template configuration (`discovery_agent.yml`).
@@ -163,13 +163,13 @@ CENTRAL_AUTH_CLIENTID=<CLIENTID, ie. DOSA_12345...>
 2. Pull the latest image of the Discovery Agent:
 
    ```shell
-   docker pull ampc-public-docker-release/agent/v7-discovery-agent:latest
+   docker pull axway.jfrog.io/ampc-public-docker-release/agent/v7-discovery-agent:latest
    ```
 
 3. Start the Docker Discovery Agent pointing to the `env_vars` file and the keys directory. `pwd` relates to the local directory where the docker command is run. For Windows, the absolute path is preferred.
 
    ```shell
-   docker run --env-file ./env_vars -v <pwd>/keys:/keys  ampc-public-generic-release/agent/v7-discovery-agent:latest
+   docker run --env-file ./env_vars -v <pwd>/keys:/keys -it axway.jfrog.io/ampc-public-docker-release/agent/v7-discovery-agent:latest
    ```
 
 4. Run the following health check command to ensure the agent is up and running:
@@ -340,13 +340,13 @@ CENTRAL_ENVIRONMENT=<Environment>
 2. Pull the latest Docker image of the Traceability Agent:
 
    ```shell
-   docker pull https://axway.jfrog.io/artifactory/ampc-public-docker-release/agent/v7-traceability-agent:latest
+   docker pull axway.jfrog.io/ampc-public-docker-release/agent/v7-traceability-agent:latest
    ```
 
 3. Start the Traceability Agent pointing to the `env_vars` file, `keys`, and the logging `events` directory. `pwd` relates to the local directory where the docker command is run. For Windows, the absolute path is preferred.
 
    ```shell
-   docker run --env-file ./env_vars -v <pwd>/keys:/keys -v <pwd>/events:/events https://axway.jfrog.io/artifactory/ampc-public-docker-release/agent/v7-traceability-agent:latest
+   docker run --env-file ./env_vars -v <pwd>/keys:/keys -v <pwd>/events:/events axway.jfrog.io/ampc-public-docker-release/agent/v7-traceability-agent:latest
    ```
 
    * See [Create and start API Gateway Docker container](/docs/apim_installation/apigw_containers/docker_script_gwimage/#mount-volumes-to-persist-logs-outside-the-api-gateway-container/) for more  information regarding the persistent API Gateway trace and event logs to a directory on your host machine.
