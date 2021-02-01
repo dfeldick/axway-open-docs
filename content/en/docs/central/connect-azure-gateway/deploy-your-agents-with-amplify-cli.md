@@ -123,20 +123,20 @@ To utilize the agents, pull the latest Docker images and
 run them using the appropriate supplied environment files, (da_env_vars.env & ta_env_vars.env):
 
   - Pull the latest Discovery Agent:
-    docker pull beano.swf-artifactory.lab.phx.axway.int/beano/azure-discovery-agent:latest
+    docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-discovery-agent:latest
   - Pull the latest Traceability Agent:
-    docker pull beano.swf-artifactory.lab.phx.axway.int/beano/azure-traceability-agent:latest
+    docker pull https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-traceability-agent:latest
 
   - Run the latest Discovery Agent:
     docker run --env-file "$(pwd)"/da_env_vars.env -v "$(pwd)":/keys \
-        beano.swf-artifactory.lab.phx.axway.int/beano/azure-discovery-agent:latest
+        https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-discovery-agent:latest
   - Run the latest Traceability Agent:
     docker run --env-file "$(pwd)"/da_env_vars.env -v "$(pwd)":/keys \
-        beano.swf-artifactory.lab.phx.axway.int/beano/azure-traceability-agent:latest
+        https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config/azure-traceability-agent:latest
 ```
 
 * Pull the latest images of the Discovery/Traceability Agents:
-    * These two commands pull the latest released agents from axway-docker-public-registry.bintray.io.
+    * These two commands pull the latest released agents from https://axway.jfrog.io/artifactory/ampc-public-generic-release/aws-agents/aws_apigw_agent_config.
 * Run the latest images of the Discovery/Traceability Agents:
     * These two commands run the Docker Containers using the created environment files, and mount the directory of the location of the appropriate keys, `public_key.pem` & `private_key.pem`, which were either generated during the installation, or available from an existing service account.
 
